@@ -1,0 +1,26 @@
+.font{
+    color:white;
+    text-align: center;
+    padding: 0px 15px;
+    
+}
+.header_M{
+    font-size:25px
+}
+.M{
+    display: inline-flex;
+    border-bottom: 1px;
+    padding-top: 10px;
+    
+}
+.IconEx{
+    font-size:25px;
+    text-align:left;
+    padding-top: 10px;
+    color:#ffffff;
+}
+.nx{
+    border-style: double;
+    height:470px;
+    text-align:center;
+}

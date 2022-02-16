@@ -1,0 +1,31 @@
+<div class='font'>
+    <div class='IconEx'><i class="fa fa-chevron-left" routerLink="/Main"></i></div>
+    <div class='header_M'>
+        <header>ตารางเงินเดือน</header>
+    </div>
+    <div class='col-sm-12 M'>
+        <div class='col-sm-4 '>วันที่</div>
+        <div class='col-sm-4 '>ยอดเงิน</div>
+
+    </div>
+    <div class='col-sm-12 M' style=' padding-top:20px'>
+        <div class='col-sm-6 nx'>
+            <div style='border-bottom: 2px solid white; padding-top:10px'  *ngFor="let nameSalarys of nameSalary; let i = index"
+                [class.active]="i == currentSalaryIndex" (click)="setActiveSalary(nameSalarys, i)">
+                {{ nameSalarys.date }}
+        </div>
+        </div>
+        <div class='col-sm-6 nx'>
+            <div style='border-bottom: 2px solid white;padding-top:10px' *ngFor='let sum of summary'>
+                {{ sum }}
+            </div>
+        </div>
+    </div>
+    <div>
+        <div style='padding-top:10px'>
+            ยอดรวมทั้งหมด : 
+            {{total}}
+            บาท
+        </div>
+    </div>
+</div>

@@ -1,0 +1,44 @@
+.deli{
+    color: white;
+}
+.pos{
+    text-align: center;
+    
+}
+.IconEx{
+    font-size:25px;
+    text-align:left;
+    padding-top: 10px;
+    color:#ffffff;
+}
+.taskI{
+    display:inline-flex;
+    padding: 20px 0px;
+}
+.Hde{
+    font-size: 2rem;
+    padding-top:50px;
+    padding-bottom: 20px;
+}
+.BtnD{
+    width:124px;
+    height:38px;
+    background-color:#F01010;
+    color:#ffffff;
+    border-radius: 15px;
+}
+.pas{
+    margin:auto;
+}
+.colorH{
+    margin-top: 50px;
+    margin-left: 38px;
+    width: 80%;
+    height: auto;
+    background-color: white;
+    color: olivedrab;
+}
+.headr{
+    padding-top:20px;
+    padding-bottom:20px;
+}

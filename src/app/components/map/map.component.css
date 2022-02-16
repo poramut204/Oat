@@ -1,0 +1,17 @@
+#map{
+    width: auto;
+    height: 100%;
+}
+.size{
+    width: 360px;
+    height: 590px;
+    padding: 20px 20px;
+}
+.Iconx{
+    
+    padding-left: 16px;
+    font-size:25px;
+    text-align:left;
+    padding-top: 10px;
+    color:#ffffff;
+}

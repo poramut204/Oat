@@ -1,0 +1,19 @@
+<div class="container">
+    <div class='col-12 textCenter'>
+        <div>
+            <h1 class="head">เข้าสู่ระบบ</h1>
+        </div>
+        <div class="dEmail">
+            <input type="text" class="Email" #email placeholder="| อีเมล">
+        </div>
+        <div class="dPass">
+            <input type="text" class="Pass" #password placeholder="| รหัสผ่าน">
+        </div>
+        <div class="Forget-Pass">
+            <a href="">ลืมรหัสผ่าน ?</a>
+        </div>
+        <div class="BTN-Login">
+            <button class="BTN-Log" routerLink='/Main' (click)='onSingin(email.value,password.value)'>เข้าสู่ระบบ</button>
+        </div>
+    </div>
+</div>

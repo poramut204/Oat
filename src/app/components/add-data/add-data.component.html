@@ -1,0 +1,72 @@
+<div class="container deli">
+    <div class="col-12 pos" *ngIf='!submitted'>
+        <div class='IconEx'><i class="fa fa-chevron-left" routerLink="/Main"></i></div>
+        <div class='Hde'>
+            <h3>ใบส่งของ</h3>
+        </div>
+        <div class='col-sm-12 taskI'>
+            <div class='col-sm-5'>
+                <label>เลขที่ใบส่งของ</label>
+            </div>
+            <div class='col-sm-7'><input type="text" required [(ngModel)]="table.invoice_number"></div>
+        </div>
+        <div class='col-sm-12 taskI'>
+            <div class='col-sm-5'>
+                <label>วันที่</label>
+            </div>
+            <div class='col-sm-7'><input type="date" required [(ngModel)]="table.date"></div>
+        </div>
+        <div class='col-sm-12 taskI'>
+            <div class='col-sm-5'>
+                <label>เลข SN</label>
+            </div>
+            <div class='col-sm-7'><input type="text" required [(ngModel)]="table.SN_number"></div>
+        </div>
+        <div class='col-sm-12 taskI'>
+            <div class='col-sm-5'>
+                <label>น้ำหนัก (ตัน)</label>
+            </div>
+            <div class='col-sm-7'><input type="text" required [(ngModel)]="table.weight"></div>
+        </div>
+        <div class='col-sm-12 taskI'>
+            <div class='col-sm-5'>
+                <label>ค่าขนส่ง</label>
+            </div>
+            <div class='col-sm-7'>
+                <input type="text" required [(ngModel)]="table.freight">
+            </div>
+        </div>
+        <div class='col-sm-12 taskI'>
+            <div class='col-sm-5'>
+                <label>ค่าขนลง</label>
+            </div>
+            <div class='col-sm-7'><input type="text" required [(ngModel)]="table.freight_human"></div>
+        </div>
+        <div class='col-sm-12 taskI'>
+            <div class='col-sm-5'>
+                <label>ทะเบียนรถ</label>
+            </div>
+            <div class='col-sm-7'><input type="text" required [(ngModel)]="table.car_registration"></div>
+        </div>
+        <div class='col-sm-12 taskI'>
+            <div class='col-sm-5'>
+                <label>ปลายทาง</label>
+            </div>
+            <div class='col-sm-7'><input type="text" required [(ngModel)]="table.destination"></div>
+        </div>
+        <div style='padding:40px 0px'>
+            <button class='BtnD' (click)="saveDatatruck()">ยืนยัน</button>
+        </div>
+
+    </div>
+    <div *ngIf="submitted">
+        <div class='col-12 colorH pos' style='margin-top: 240px;'>
+            <div class='col-sm-12' style='padding-bottom:20px;'>
+                <h4 class='headr'>กรอกข้อมูลสำเร็จ</h4>
+                <button routerLink="/Main"
+                    style='background-color:#F01010 ;color:floralwhite; border-radius: 15px;'>กลับหน้าหลัก</button>
+                <button routerLink="/Map">ดูแผนที่</button>
+            </div>
+        </div>
+    </div>
+</div>

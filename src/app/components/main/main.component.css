@@ -1,0 +1,17 @@
+.btn-wh{
+    width: 266px;
+    height: 45px;
+    font-size: 20px; 
+}
+.padMain{
+    padding: 21px 0px;
+}
+.padding-text{
+    text-align: center;
+}
+.padExit{
+    text-align: right;
+    padding-top: 45%;
+    padding-right: 14px;
+    color:white;
+}

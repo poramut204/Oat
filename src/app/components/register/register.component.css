@@ -1,0 +1,55 @@
+.head{
+    padding-top: 30px;
+    color: #ffffff;
+}
+.RE{
+    text-align: center;
+
+}
+.regis{
+    width: 266px;
+    height: 47px;
+    background-color:#F01010;
+    color: #ffffff;
+}
+
+.Email{
+    width: 266px;
+    height: 47px;
+    
+}
+.Pass{
+    width: 266px;
+    height: 47px;   
+}
+.dEmail{
+    padding-top: 10px;
+    padding-left: 0%;
+}
+.dPass{
+    padding-top: 20px;
+    padding-left: 0%;
+}
+.dConPass{
+    padding-top: 20px;
+    padding-left: 0%;
+}
+.dCNum{
+    padding-top: 20px;
+    padding-left: 0%;
+}
+.dNum{
+    padding-top: 20px;
+    padding-left: 0%;
+}
+.dRegis{
+    padding-top: 30px;
+    padding-left: 5px;
+    
+}
+.IconEx{
+    font-size:25px;
+    text-align:left;
+    padding-top: 10px;
+    color:#ffffff;
+}

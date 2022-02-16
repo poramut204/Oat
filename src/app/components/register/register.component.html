@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="RE">
+        <div class='IconEx'><i class="fa fa-chevron-left" routerLink="/Home"></i></div>
+        <div>
+            <h1 class="head">สมัครสมาชิก</h1>
+        </div>
+        <div class="dEmail" id="dEmail">
+            <input type="text" class="Email" placeholder="| ชื่อ" required [(ngModel)]="DataEmployee.Fname">
+        </div>
+        <div class="dEmail" id="dEmail">
+            <input type="text" class="Email" placeholder="| นามสกุล" required [(ngModel)]="DataEmployee.Lname">
+        </div>
+        <div class="dEmail" id="dEmail">
+            <input type="text" class="Email" #emailSignup placeholder="| อีเมล" required [(ngModel)]="DataEmployee.email">
+        </div>
+        <div class="dEmail" id="dPass">
+            <input type="password" class="Pass" #passwordSignup placeholder="| รหัสผ่าน" required [(ngModel)]="DataEmployee.passw"> 
+        </div>
+        <div class="dEmail" id="dConPass">
+            <input type="password" class="Pass" placeholder="| ยืนยันรหัสผ่าน">
+        </div>
+        <div class="dEmail" id="dCNum">
+            <input type="text" class="Pass" placeholder="| เบอร์โทรศัพท์" required [(ngModel)]="DataEmployee.phonenum">
+        </div>
+        <div class="dEmail" id="dNum">
+            <input type="text" class="Pass" placeholder="| ที่อยู่" required [(ngModel)]="DataEmployee.teeu">
+        </div>
+        <div class="dRegis" id="dRegis">
+            <button class="regis"(click)="onSingup(emailSignup.value,passwordSignup.value)" routerLink='/Login'>สมัครสมาชิก</button>
+        </div>
+    </div>
+</div>

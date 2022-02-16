@@ -1,0 +1,31 @@
+<div class="container">
+    <div class='row font_color'>
+        <div class='IconEx'><i class="fa fa-chevron-left" routerLink="/Main"></i></div>
+        <div class='col-sm-12'>
+            <div class='header_M'>
+                <header>ตารางการทำงาน</header>
+            </div>
+            <div class='col-sm-12 title_M'>
+                <div class='col-sm-4 '>ปลายทาง</div>
+                <div class='col-sm-4 '> วันที่</div>
+
+            </div>
+            <div class='col-sm-12 title_M' style=' padding-top:20px'>
+                <div class='col-sm-6' style='border-style: double; height:470px'>
+                    <div style='border-bottom: 2px solid white;padding-top:10px' *ngFor="let nametask of nameTasks; let i = index"
+                        [class.active]="i == currentIndex" (click)="setActiveTruck(nametask, i)">
+                        {{ nametask.destination }}
+                    </div>
+                </div>
+                <div class='col-sm-6' type="date" style='border-style: double; height:470px'>
+                    <div style='border-bottom: 2px solid white;padding-top:10px' *ngFor="let nametask of nameTasks; let i = index"
+                        [class.active]="i == currentIndex" (click)="setActiveTruck(nametask, i)">
+                        {{ nametask.date }}
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
