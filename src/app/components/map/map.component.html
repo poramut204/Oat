@@ -1,5 +1,11 @@
-<div class='Iconx'><i class="fa fa-chevron-left" routerLink="/Main"></i></div>
-<div class="container size" >
-    <div id="map">
+<body ondblclick="init(document.getElementById('Lon').value,document.getElementById('Lat').value);"
+    style="background-color: #0e2038;">
+    <div class='Iconx'><i class="fa fa-chevron-left" routerLink="/Main"></i></div>
+    <div class="container size">
+        <div id="map">
+        </div>
     </div>
-</div>
+</body>
+
+<input type="number" name="a" id="Lon" value="{{Lon}}" class="LonLat"><br> 
+<input type="number" name="b" id="Lat" value="{{Lat}}" class="LonLat"><br>

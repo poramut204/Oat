@@ -24,6 +24,8 @@ export class AddDataComponent implements OnInit {
       this.datatruckService.create(this.table).then(() => {
       this.submitted = true;
       });
+      this.datatruckService.setLonLat(this.table.destination)
+      console.log(this.table.destination)
     }
       
   }

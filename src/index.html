@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>AppTruck</title>
@@ -9,30 +10,31 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link href="//netdna.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   <link rel="icon" type="image" href="../src/assets/box-truck.png">
   <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
   <script type="text/javascript" src="https://api.longdo.com/map/?key=3acbc7c1664677873e05d4d6718f5906"></script>
-  <script src\map.js></script>
   <script>
-    function init() {
-      map = new  longdo.Map({
+    function init(Lon,Lat) {
+      map = new longdo.Map({
         placeholder: document.getElementById('map')
       });
       map.Route.placeholder(document.getElementById('result'));
       map.Route.add(new longdo.Marker({ lon: 100.538316, lat: 13.764953 },
-          { 
-              title: 'Victory monument', 
-              detail: 'I\'m here' 
-          }
+        {
+          title: 'Victory monument',
+          detail: 'I\'m here'
+        }
       ));
-      map.Route.add({ lon: 100, lat: 20 });
+      map.Route.add({ lon: Lon, lat: Lat });
       map.Route.search();
-      console.log('hello');
     }
   </script>
 </head>
-<body onload ="init();" style="background-color: #0e2038;">
+
+<body style="background-color: #0e2038;">
   <app-root></app-root>
 </body>
+
 </html>
